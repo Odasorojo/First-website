@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Website Project </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/be05bf83c1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+    <nav>
+        <a href="practicehtml.html"><img src="Cielolindologo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="valerianunez-home.html" target="_self">HOME</a></li>
+                <li><a href="valerianunez-kitchen.html" target="_self">KITCHEN</a></li>
+                <li><a href="valerianunez-dinning.html" target="_self">DINNING</a></li>
+                <li><a href="valerianunez-decor.html" target="_self">DECOR</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+<!-------KITCHEN------->
+<section class="KITCHEN">
+    <h1>POTS & PANS</h1>
+        <div class="row">
+            <div class="KITCHEN-col">
+                <img src="mixnmatchpots.jpg">
+                <div class="layer">
+                <p>Wooden Kitchen Utensils</p>
+                </div>
+            </div>
+            <div class="KITCHEN-col">
+                <img src="potsnpanset.jpg">
+                <div class="layer">
+                <p>Dark Wooden Utensils</p>
+                </div>
+            </div>
+            <div class="KITCHEN-col">
+                <img src="ceramicmixnmatchpan.jpg">
+                <div class="layer">
+                <p>Wooden Carved Spoons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-------Javascript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";  
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";  
+        }
+    </script>
+<footer>
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+    <p>Made with ♡ by Valeria Alexandra <br>
+    Copyright &copy; </p>
+</footer>
+</body>
+</html>
