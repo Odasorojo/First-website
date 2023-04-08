@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Website Project </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/be05bf83c1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="practicehtml.html"><img src="Cielolindologo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" target="_self">HOME</a></li>
+                <li><a href="valerianunez-kitchen.html" target="_self">KITCHEN</a></li>
+                <li><a href="valerianunez-dining.html" target="_self">DINING</a></li>
+                <li><a href="valerianunez-decor.html" target="_self">DECOR</a></li>
+                <li><a href="valerianunez-contact.html" target="_self">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+<!-------TABLE------->
+<div class="table-box">
+
+</div>
+<div class="table-row">
+    <div class="table-cell">
+        <p>Type</p>
+    </div>
+    <div class="table-cell">
+        <p>Customized Piece</p>
+    </div>
+    <div class="table-cell">
+        <p> Pricing</p>
+    </div>
+</div>
+<div class="table-row table-head">
+    <div class="table-cell first-cell">
+        <p>Kitchen</p>
+    </div>
+    <div class="table-cell">
+        <p>Customized</p>
+    </div>
+    <div class="table-cell last-cell">
+        <p>$45+</p>
+    </div>
+</div>
+<div class="table-row table-head">
+    <div class="table-cell first-cell">
+        <p>Dining</p>
+    </div>
+    <div class="table-cell">
+        <p>Customized</p>
+    </div>
+    <div class="table-cell last-cell">
+        <p>$35+</p>
+    </div>
+</div>
+<div class="table-row table-head">
+    <div class="table-cell first-cell">
+        <p>Decor</p>
+    </div>
+    <div class="table-cell">
+        <p>Customized</p>
+    </div>
+    <div class="table-cell last-cell">
+        <p>$30+</p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-------CONTACT------->
+        <div class="hero">
+            <form>
+                <div class="together">
+                    <div class="input-group">
+                        <input type="text" id="name" required onkeyup="validateName()">
+                        <label for="name"><i class="fa-solid fa-user"></i>Full Name</label>
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="number" required onkeyup="validatePhone()">
+                        <label for="number"><i class="fa-solid fa-phone"></i>Phone No.</label>
+                        <span id="phone-error"></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required onkeyup="validateEmail()">
+                    <label for="email">
+                        <i class="fa-solid fa-envelope"></i>Email Address</label>
+                        <span id="email-error"></span>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="8" required onkeyup="validateMessage()"></textarea>
+                    <label for="message"><i class="fa-solid fa-messages"></i>Your Message</label>
+                    <span id="message-error"></span>
+                </div>
+                <button onclick="return validateForm()">SUBMIT</button>
+                <span id="submit-error"></span>
+            </form>
+        </div>
+    </section>
+<!-------Javascript for Form Validation------->
+<script src="script.js"></script>
+<!-------Javascript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";  
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";  
+        }
+    </script>
+<footer>
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </div>
+    <p>Made with ♡ by Valeria Alexandra <br>
+    Copyright &copy; </p>
+</footer>
+</body>
+</html>
