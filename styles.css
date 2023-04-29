@@ -334,3 +334,9 @@ textarea:valid~label{
 footer p{
     text-align: center;
 }
+.container{
+    width: 400px;
+    height:185px;
+    align-items: center;
+    display: inline;
+}
